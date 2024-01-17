@@ -14,23 +14,24 @@ public class Player2Controller : MonoBehaviour
             transform.Translate(Vector3.up * Time.deltaTime * speed);
         }
         if (Input.GetKey(KeyCode.S))
-        { 
+        {
             transform.Translate(Vector3.down * Time.deltaTime * speed);
         }
-        if (Input.GetKey(KeyCode.A)) { 
+        if (Input.GetKey(KeyCode.A))
+        {
             transform.Translate(Vector3.left * Time.deltaTime * speed);
         }
         if (Input.GetKey(KeyCode.D))
         {
             transform.Translate(Vector3.right * Time.deltaTime * speed);
         }
-        if(Mathf.Abs(transform.position.x) > 29.35f)
+        if (Mathf.Abs(transform.position.x) > 29.35f)
         {
-            transform.position = new Vector3(transform.position.x*-1, transform.position.y, transform.position.z);
+            transform.position = new Vector3(transform.position.x * -1, transform.position.y, transform.position.z);
         }
-        if(Mathf.Abs(transform.position.y) > 7.9f)
+        if (Mathf.Abs(transform.position.y) > 7.9f)
         {
-            transform.position = new Vector3(transform.position.x, transform.position.y*-1, transform.position.z);
+            transform.position = new Vector3(transform.position.x, transform.position.y * -1, transform.position.z);
         }
     }
 }
